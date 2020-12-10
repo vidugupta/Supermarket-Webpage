@@ -1,0 +1,211 @@
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: rgba(253, 164, 126, 0.342);
+}
+
+/* Navbar */
+#mainNavbar .navbar-brand{
+    color: #3D3737;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+#mainNavbar .nav-link{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #3D3737;
+}
+
+#mainNavbar .nav-link:hover{
+    font-size: 1.25rem;
+    color: #a38e75;
+}
+
+.card{
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    background: #3D3737;
+}
+
+.carousel .carousel-item img{
+    height: 757px;
+    width: 1100px;
+    transition: 5s;
+}
+
+/* About Us */
+#aboutSec{
+    background-color: black;
+}
+
+#aboutSec .jumbotron{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 4%;
+    height: 350px;
+    background: url(https://cdn.dribbble.com/users/2046015/screenshots/4672493/main-walker-shopper_drbl-2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: center;
+}
+
+#aboutSec .jumbotron h1 span{
+    font-weight: 200;
+    color: #ffffff;
+}
+
+#aboutSec .jumbotron h1{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+}
+
+#aboutSec .jumbotron h5{
+    color: black;
+    text-align: center;
+    padding-top: 4%;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#aboutSec .btn{
+    background-color: black;
+    color: #ffffff;
+    margin-top: 15%;
+    margin-left: 9%;
+}
+
+#aboutSec .btn:hover{
+    color: #807e7e;
+}
+
+/* Services Section */
+#servicesSec{
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+#servicesSec h2{
+    padding-bottom: 3%;
+    text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#servicesSec .col-12{
+	float: left;
+	z-index: 2;
+}
+
+#servicesSec .col-12 ul{
+	margin-left: 5%;
+}
+
+#servicesSec .col-12 ul li{
+	list-style-type: none;
+	font-weight: 400;
+	margin-top: 10px;
+    cursor: pointer;
+}
+
+#servicesSec .col-12 li:hover{
+	color: #807e7e;
+}
+
+#servicesSec .col-12 ul li ul{
+	display: none;
+	z-index: 10;
+	top: 77px;
+}
+
+#servicesSec .col-12 ul li ul span{
+    font-size: 0.75rem;
+}
+
+#servicesSec .col-12 ul li:hover ul{
+	display: block;
+	height: 225px;
+	margin-left: 14%;
+	padding: 0 100px 10px 10px;
+	position: initial;
+	background: rgba(253, 164, 126, 0.15);
+	box-shadow: 1px 1px 4px 1px rgba(253, 164, 126, 0.082);
+}
+
+/* Photo Gallery */
+#photoGallery h2{
+    padding-bottom: 3%;
+    text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#photoGallery .col-md-4 img{
+    height: 250px;
+    width: 350px;
+}
+
+/* Footer */
+#footer{
+    padding-top: 3%;
+    background-color: black;
+    padding-bottom: 3%;
+}
+
+#footer h3{
+    text-align: center;
+    color: #adaaaa;
+}
+
+#footer .lead{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: #adaaaa;
+}
+
+#footer .col-md-8 a{
+    padding-left: 11%;
+    font-size: 1.5rem;
+    color: #adaaaa;
+}
+
+#footer .col-md-8 a:hover{
+    color: #e2e2e2;
+}
+
+#footer .lead1{
+    padding-top: 3%;
+    text-align: center;
+    color: #4e4e4e;
+}
+
+@media (max-width: 1200px)
+{
+    #servirsSec .col-12{
+		width: 34%;
+		z-index: 20;
+		top: 133px;
+        position: fixed;
+		display: none;
+    }
+    
+	#servicesSec .col-12 ul li ul{
+		top: 133px;
+    }
+    
+    #servicesSec .col-12 ul li:hover ul{
+		margin-left: 31%
+    }
+    
+    #photoGallery .col-md-4 img{
+        height: 100%;
+        width: 100%;
+    }
+}
